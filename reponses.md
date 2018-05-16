@@ -34,3 +34,11 @@
     *  local               gradle-home
  
 
+#6.4.4
+  * docker container run --rm -ti -v $(pwd):/src -v gradle-home:/home/gradle/.gradle -w /src gradle:4.7.0-jdk8-alpine gradle build
+
+#6.4.5
+  * docker container run --rm -ti -v $(pwd):/src -v gradle-home:/home/gradle/.gradle -p 8001:8080 -w /src gradle:4.7.0-jdk8-alpine gradle bootRun
+  * {"articles":[],"articlesCount":0}
+
+
