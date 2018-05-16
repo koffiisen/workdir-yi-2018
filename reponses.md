@@ -9,10 +9,28 @@
   * volume src
 
   * docker image pull mkenney/npm:node-8-debian
-  * Image id : 9af19a7f4e2c
+  * Image ID : 9af19a7f4e2c
 
 #6.3.3
   * docker container run --rm -i -v $(pwd):/src mkenney/npm:node-8-debian npm install
 
 #6.3.4
   * docker container run --rm -i -v $(pwd):/src -p 8000:8080 mkenney/npm:node-8-debian npm run dev
+
+#6.4.1
+  * SHA1 eef3d052fe83dc688c0eb3dab97876d714a2d14d
+
+#6.4.2
+  * docker image pull gradle:4.7.0-jdk8-alpine
+  * Image ID f438b7d58d0a
+  * Volume déclaré /home/gradle/.gradle
+
+#6.4.3
+  * docker volume create gradle-home
+  * docker volume ls
+  * Liste des Volumes : 
+    *  DRIVER              VOLUME NAME
+       local               1d4184c08e8fa5c620dbcd84e254dcf2979fda337b45c0e7faaf71e44ebbc845
+       local               gradle-home
+ 
+
